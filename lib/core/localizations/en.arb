@@ -1,0 +1,19 @@
+{
+  "@@locale": "en",
+  "splashpage_get_started": "Get Started",
+  "@splashpage_get_started": {
+    "description": "Added from file splash_page.dart"
+  },
+  "splashpage_title": "Learn to build TODO app using\nFeature Driven Architecture (FDA)\nModel View ViewModel (MVVM) Design Pattern\nBloc State Management.",
+  "@splashpage_title": {
+    "description": "Added from file splash_page.dart"
+  },
+  "todopage_no_todos": "No todos for today.",
+  "@todopage_no_todos": {
+    "description": "Added from file todo_page.dart"
+  },
+  "todopage_todo_list": "Todo List",
+  "@todopage_todo_list": {
+    "description": "Added from file todo_page.dart"
+  }
+}

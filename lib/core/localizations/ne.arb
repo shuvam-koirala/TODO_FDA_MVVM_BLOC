@@ -1,0 +1,19 @@
+{
+  "@@locale": "ne",
+  "splashpage_get_started": "अगाडि बढ्नुहोस्",
+  "@splashpage_get_started": {
+    "description": "Added from file splash_page.dart"
+  },
+  "splashpage_title": "फीचर ड्रिभन आर्किटेक्चर (एफडीए)\nमोडल भ्यू भ्यूमोडल (एमभीभीएम) डिजाइन प्याटर्न\nब्लोक स्टेट म्यानेजमेन्ट\nप्रयोग गरेर TODO एप बनाउन सिक्नुहोस्।",
+  "@splashpage_title": {
+    "description": "Added from file splash_page.dart"
+  },
+  "todopage_no_todos": "आजको लागि कुनै टुडो छैन।",
+  "@todopage_no_todos": {
+    "description": "Added from file todo_page.dart"
+  },
+  "todopage_todo_list": "टुडो सूची",
+  "@todopage_todo_list": {
+    "description": "Added from file todo_page.dart"
+  }
+}
