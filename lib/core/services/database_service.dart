@@ -54,6 +54,18 @@ class DatabaseService {
     });
   }
 
+  Future<int> updateTask(TodoModel todo) async {
+    final Database db = await database;
+    try {
+      final int count = await db.rawUpdate(
+          "UPDATE $_tasksTableName SET $_tasksStatusColumnName=? WHERE $_tasksIdColumnName=?",
+          [todo.isCompleted ? 1 : 0, todo.id]);
+      return count;
+    } on Exception catch (e) {
+      throw Exception("Unable to update task");
+    }
+  }
+
   Future<List<TodoModel>> getTask() async {
     final Database db = await database;
     final List<Map<String, Object?>> data = await db.query(_tasksTableName);
@@ -66,5 +78,16 @@ class DatabaseService {
           isCompleted: d[_tasksStatusColumnName] == 1));
     }
     return todos;
+  }
+
+  Future<int> deleteTask({required String id}) async {
+    final Database db = await database;
+    try {
+      final int count = await db.rawDelete(
+          'DELETE FROM $_tasksTableName WHERE $_tasksIdColumnName=?', [id]);
+      return count;
+    } on Exception catch (e) {
+      throw Exception("Unable to delete task");
+    }
   }
 }

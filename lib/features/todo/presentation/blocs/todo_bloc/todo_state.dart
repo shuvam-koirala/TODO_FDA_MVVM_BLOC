@@ -1,15 +1,35 @@
 part of 'todo_bloc.dart';
 
-enum TodoListStatus { loading, success, error }
+enum TodoListStatus {
+  loading,
+  adding,
+  updating,
+  deleting,
+  loaded,
+  added,
+  updated,
+  deleted,
+  errorLoading,
+  errorAdding,
+  errorUpdating,
+  errorDeleting
+}
 
 class TodoState extends Equatable {
   const TodoState(
-      {this.todos = const [], this.status = TodoListStatus.loading});
+      {this.todos = const [],
+      this.status = TodoListStatus.loading,
+      this.message = ""});
   final List<Todo> todos;
   final TodoListStatus status;
+  final String message;
 
-  TodoState copyWith({List<Todo>? todos, TodoListStatus? status}) {
-    return TodoState(status: status ?? this.status, todos: todos ?? this.todos);
+  TodoState copyWith(
+      {List<Todo>? todos, TodoListStatus? status, String? message}) {
+    return TodoState(
+        status: status ?? this.status,
+        todos: todos ?? this.todos,
+        message: message ?? this.message);
   }
 
   @override

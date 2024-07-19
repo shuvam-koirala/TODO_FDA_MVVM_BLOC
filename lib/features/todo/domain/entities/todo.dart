@@ -8,4 +8,13 @@ class Todo {
       required this.description,
       required this.title,
       required this.isCompleted});
+
+  Todo copyWith(
+      {String? id, String? title, String? description, bool? isCompleted}) {
+    return Todo(
+        id: id ?? this.id,
+        description: description ?? this.description,
+        title: title ?? this.title,
+        isCompleted: isCompleted ?? this.isCompleted);
+  }
 }

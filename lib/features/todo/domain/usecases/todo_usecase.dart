@@ -27,16 +27,26 @@ class TodoUsecase {
     await _repository.addTodo(todoModel);
   }
 
-  updateTodo(Todo todo) async {
+  Future<String> updateTodo(Todo todo) async {
     TodoModel todoModel = TodoModel(
         description: todo.description,
         id: todo.id,
         title: todo.title,
         isCompleted: todo.isCompleted);
-    await _repository.updateTodo(todoModel);
+    try {
+      final String message = await _repository.updateTodo(todoModel);
+      return message;
+    } on Exception catch (e) {
+      rethrow;
+    }
   }
 
-  deleteTodo(String id) async {
-    await _repository.deleteTodo(id);
+  Future<String> deleteTodo(String id) async {
+    try {
+      final String message = await _repository.deleteTodo(id);
+      return message;
+    } on Exception catch (e) {
+      rethrow;
+    }
   }
 }

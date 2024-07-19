@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:todo_fda_mvvm_bloc/features/todo/data/models/todo_model.dart';
 
 abstract class TodoRepository {
