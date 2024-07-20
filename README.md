@@ -17,18 +17,18 @@ This project showcases a simple yet powerful TODO application built with Flutter
 
 - **Bloc State Management**: Bloc (Business Logic Component) is used to manage the state of the application, providing a predictable and testable state management solution.
 
-- **Local Data Storage**: Utilizes `sqflite` to store data locally on the user's device. In the future, we plan to add support for other local database tools like Hive and ObjectBox, giving the community a variety of options for local data storage.
+- **Local Data Storage**: Utilizes `sqflite` to store data locally on the user's device. In the future, I plan to add support for other local database tools like Hive and ObjectBox, giving the community a variety of options for local data storage.
 
 ## Future Enhancements
 
-This is an ongoing project, and we are committed to continuously improving and expanding its functionality. Planned future enhancements include:
+This is an ongoing project, and I am committed to continuously improving and expanding its functionality. Planned future enhancements include:
 - Adding support for additional local database tools (e.g., Hive, ObjectBox).
 - Introducing new features and improvements based on community feedback.
 - Implementing additional useful tools and techniques to provide a comprehensive resource for Flutter developers.
 
 ## Contribution
 
-We welcome contributions from the Flutter community! Whether it's reporting bugs, suggesting new features, or submitting pull requests, your input is highly valued.
+I welcome contributions from the Flutter community! Whether it's reporting bugs, suggesting new features, or submitting pull requests, your input is highly valued.
 
 ## Get Started
 
